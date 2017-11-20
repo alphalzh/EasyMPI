@@ -18,3 +18,6 @@ The project will be demoed at the poster session on December 12th. An MPI progra
 
 ### Proposal
 Please click [here](https://github.com/alphalzh/EasyMPI/blob/master/Proposal.pdf) for the project proposal.
+
+### Checkpoint Report
+Please click [here](https://github.com/alphalzh/EasyMPI/blob/master/Project_Checkpoint_zihengl_xingyuj1.pdf) for the project checkpoint report.
