@@ -14,3 +14,6 @@ Current & future weeks:
 
 ### Demo
 The project will be demoed at the poster session on December 12th. An MPI program will be profiled by the profiler, and we will show how it can help the programmers optimize their code based on the profiling result.
+
+### Proposal
+
