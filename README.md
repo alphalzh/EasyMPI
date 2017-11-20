@@ -8,9 +8,10 @@ Past weeks:
 - Week 2 (Mon. 11/13 - Sun. 11/19) Collected data from Prof. Railing on Wednesday, begin testing on the collected data and implementing the backend.
 
 Current & future weeks:
-- Week 3 (Mon. 11/20 - Sun. 11/26) Finish checkpoint report, finish 80% of backend implementation and testing, start frontend (the web interface) implementation and predictor implementation. 
-- Week 4 (Mon. 11/27 - Sun. 12/03) Finish frontend implementation and predictor implementation.
-- Week 5 (Mon. 12/04 - Sun. 12/10) Tweak the product, finish project report, finish project poster.
+- Week 3, first half (Mon. 11/20 - Thurs. 11/23) Finish checkpoint report, finish analyzing the taskgraph and part of backend implementation(Ziheng Liao), start frontend (the web interface) implementation(Xingyu Jin).
+- Week 3, second half (Fri. 11/24 - Sun. 11/26) Finish a majority of backend implementation, start unit testing(Ziheng Liao), finish a majority of frontend implementation(Xingyu Jin).
+- Week 4 (Mon. 11/27 - Sun. 12/03) Finish backend implementation and unit testing(Ziheng Liao). Finish frontend implementation and start predictor implementation(Xingyu Jin).
+- Week 5 (Mon. 12/04 - Sun. 12/10) Finish predictor implementation(Xingyu Jin). Finish integration and functional testing, finish project report, finish project poster(Both).
 
 ### Demo
 The project will be demoed at the poster session on December 12th. An MPI program will be profiled by the profiler, and we will show how it can help the programmers optimize their code based on the profiling result.
