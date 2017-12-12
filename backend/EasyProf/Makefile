@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS= -g -std=c++11 -O3 -Wall
+CXXFLAGS= -g -std=c++11 -O3
 OBJECT_PROF= easyProf.o
 OBJECT_VIZ= easyViz.o
 INCLUDES=

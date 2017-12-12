@@ -875,10 +875,10 @@ int main(int argc, char const *argv[])
             printf("Total basic blocks: %lu\n", totalBasicBlocks);
             printf("Unique basic blocks: %lu\n", uniqueBlocks.size());
             printf("Total tasks: %lu\n", totalTaskCount);
-            printf("Average time per task: %lf ms\n", (double)totalTime/((double)totalTaskCount*1000000));
-            printf("Max time per task: %lf ms, task id is %s\n", (double)maxTaskTime/(double)1000000, maxTaskTimeId.toString().c_str());
+            printf("Average time per task: %lf\n", (double)totalTime/((double)totalTaskCount));
+            printf("Max time per task: %lu, task id is %s\n", maxTaskTime, maxTaskTimeId.toString().c_str());
             printf("\n");
-            printf("Total time taken: %lf ms\n", (double)totalTimeMainThread/1000000);
+            printf("Total time taken: %lu\n", totalTimeMainThread);
             printf("Total memory operations: %lu\n", totalMemOps);
             printf("Total bytes Accessed: %lu\n", totalMemBytes);
             printf("Total context groups: %u\n", nThreadGroup);
@@ -888,12 +888,12 @@ int main(int argc, char const *argv[])
         else if(input.compare("main") == 0){
             printf("Main Execution Context Statistics\n");
             printf("----------------------------------\n");
-            printf("Total time spent by main context: %lf ms\n", (double)totalTimeMainThread/(double)1000000);
-            printf("Total time spent by main context before any thread creation: %lf ms\n", (double)totalTimeSequentialBeforeCreate/(double)1000000);
-            printf("Total time spent by main context after all thread join: %lf ms\n", (double)totalTimeSequentialAfterJoin/(double)1000000);
-            printf("Total sequential time spent by main context: %lf ms\n", (double)(totalTimeSequentialAfterJoin + totalTimeSequentialBeforeCreate)/(double)1000000);
+            printf("Total time spent by main context: %lu\n", totalTimeMainThread);
+            printf("Total time spent by main context before any thread creation: %lu\n", totalTimeSequentialBeforeCreate);
+            printf("Total time spent by main context after all thread join: %lu\n", totalTimeSequentialAfterJoin);
+            printf("Total sequential time spent by main context: %lu\n", totalTimeSequentialAfterJoin + totalTimeSequentialBeforeCreate);
             printf("Sequential execution time percentage of main context: %lf%%\n", (double)(totalTimeSequentialAfterJoin + totalTimeSequentialBeforeCreate)*100/(double)totalTimeMainThread);
-            printf("Total synchronization time spent by main context: %lf ms\n", (double)totalTimeSyncMainThread/(double)1000000);
+            printf("Total synchronization time spent by main context: %lu\n", totalTimeSyncMainThread);
             printf("Synchronization time percentage of main context: %lf%%\n", (double)(totalTimeSyncMainThread)*100/(double)totalTimeMainThread);
             printf("\n");
         }
@@ -938,10 +938,10 @@ int main(int argc, char const *argv[])
                 struct statPerGroup freeCurrent = getStat(freePerGroup, i, first);
                 struct statPerGroup memsizeCurrent = getStat(memSizePerGroup, i, first);
                 printf("Number of contexts in current group: %lu\n", taskIdPerGroup[i].size());
-                printf("Average time for current group: %lf ms\n", timeCurrent.avg/(double)1000000);
+                printf("Average time for current group: %lf\n", timeCurrent.avg);
                 printf("Average number of tasks for current group: %lu\n", (uint64)tasksCurrent.avg);
                 printf("Average number of synchronizations for current group: %lu\n", (uint64)syncsCurrent.avg);
-                printf("Average time of synchronization for current group: %lf ms\n", synctimeCurrent.avg/(double)1000000);
+                printf("Average time of synchronization for current group: %lf\n", synctimeCurrent.avg);
                 printf("Average basic blocks for current group: %lu\n", (uint64)bbCurrent.avg);
                 printf("Average memory operations for current group: %lu\n", (uint64)memopsCurrent.avg);
                 printf("Average memory footprint in bytes for current group: %lu\n", (uint64)memsizeCurrent.avg);
@@ -980,10 +980,10 @@ int main(int argc, char const *argv[])
                 struct statPerGroup mallocCurrent = getStat(mallocPerGroup, groupId, first);
                 struct statPerGroup freeCurrent = getStat(freePerGroup, groupId, first);
                 struct statPerGroup memsizeCurrent = getStat(memSizePerGroup, groupId, first);
-                printf("\nAverage time for current group: %lf ms\n", timeCurrent.avg/(double)1000000);
+                printf("\nAverage time for current group: %lf\n", timeCurrent.avg);
                 printf("Max time for current group: %lf ms, context ID is %s\n", timeCurrent.max/(double)1000000, timeCurrent.maxCon.toString().c_str());
                 printf("Min time for current group: %lf ms, context ID is %s\n", timeCurrent.min/(double)1000000, timeCurrent.minCon.toString().c_str());
-                printf("Standard deviation time for current group: %lf ms\n", timeCurrent.dev/(double)1000000);
+                printf("Standard deviation time for current group: %lf\n", timeCurrent.dev);
                 printf("\n");
                 printf("Average number of tasks for current group: %lu\n", (uint64)tasksCurrent.avg);
                 printf("Max number of tasks for current group: %lu, context ID is %s\n", (uint64)tasksCurrent.max, tasksCurrent.maxCon.toString().c_str());
@@ -995,10 +995,10 @@ int main(int argc, char const *argv[])
                 printf("Min number of synchronizations for current group: %lu, context ID is %s\n", (uint64)syncsCurrent.min, syncsCurrent.minCon.toString().c_str());
                 printf("Standard deviation number of synchronizations for current group: %lu\n", (uint64)syncsCurrent.dev);
                 printf("\n");
-                printf("Average time of synchronization for current group: %lf ms\n", synctimeCurrent.avg/(double)1000000);
-                printf("Max time of synchronization for current group: %lf ms, context ID is %s\n", synctimeCurrent.max/(double)1000000, synctimeCurrent.maxCon.toString().c_str());
-                printf("Min time of synchronization for current group: %lf ms, context ID is %s\n", synctimeCurrent.min/(double)1000000, synctimeCurrent.minCon.toString().c_str());
-                printf("Standard deviation time of synchronization for current group: %lf ms\n", synctimeCurrent.dev/(double)1000000);
+                printf("Average time of synchronization for current group: %lf\n", synctimeCurrent.avg);
+                printf("Max time of synchronization for current group: %lu, context ID is %s\n", synctimeCurrent.max, synctimeCurrent.maxCon.toString().c_str());
+                printf("Min time of synchronization for current group: %lu, context ID is %s\n", synctimeCurrent.min, synctimeCurrent.minCon.toString().c_str());
+                printf("Standard deviation time of synchronization for current group: %lf\n", synctimeCurrent.dev);
                 printf("\n");
                 printf("Average basic blocks for current group: %lu\n", (uint64)bbCurrent.avg);
                 printf("Max basic blocks for current group: %lu, context ID is %s\n", (uint64)bbCurrent.max, bbCurrent.maxCon.toString().c_str());
@@ -1049,7 +1049,7 @@ int main(int argc, char const *argv[])
                 if (contextId == 0){
                     groupId = 0;
                 }
-                printf("\nTotal time for current context: %lf ms\n", (double)totalTimePerGroup[groupId][cId]/(double)1000000);
+                printf("\nTotal time for current context: %ld\n", totalTimePerGroup[groupId][cId]);
                 printf("Total number of tasks for current context: %ld\n", totalTasksPerGroup[groupId][cId]);
                 printf("Total number of synchronization for current context: %ld\n", totalSyncsPerGroup[groupId][cId]);
                 printf("Total time of synchronization for current context: %lf ms\n", (double)totalSyncTimePerGroup[groupId][cId]/(double)1000000);
