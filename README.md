@@ -16,13 +16,13 @@ After successfully compile the code, run ./easyProf taskGraphInputFile to run th
 You may have to wait a while for the profiler to work. It will display information on screen about the current processing progress. After it finished processing the task graph, you will be prompted to input command.
 
 Available commands includes:
-stat           [show basic statistics about the program]
-mem            [show information about memory usage]
-main           [show information about main execution context (or main thread)]
-group          [show information about execution context group (or parallelized threads)]
-g{groupId}     [show information about specific context group. Example: g3]
-c{contextId}   [show information about specific context. Example: c7]
-quit           [quit EasyProf]
+* stat           (show basic statistics about the program)
+* mem            [show information about memory usage]
+* main           [show information about main execution context (or main thread)]
+* group          [show information about execution context group (or parallelized threads)]
+* g{groupId}     [show information about specific context group. Example: g3]
+* c{contextId}   [show information about specific context. Example: c7]
+* quit           [quit EasyProf]
 
 ### Demo
 The project will be demoed at the poster session on December 12th. An MPI program will be profiled by the profiler, and we will show how it can help the programmers optimize their code based on the profiling result.
