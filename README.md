@@ -29,9 +29,9 @@ The project will be demoed at the poster session on December 12th. An MPI progra
 
 Screenshots of actual runs: 
 ![Image of screen 1](https://github.com/alphalzh/EasyMPI/blob/master/doc/s1.png?raw=true)
-![Image of screen 2](https://github.com/alphalzh/EasyMPI/blob/master/doc/s2.png)
+![Image of screen 2](https://github.com/alphalzh/EasyMPI/blob/master/doc/s2.png?raw=true)
 Generated task graph:
-![Image of taskgraph](https://github.com/alphalzh/EasyMPI/blob/master/doc/compressGraph.png)
+![Image of taskgraph](https://github.com/alphalzh/EasyMPI/blob/master/doc/compressGraph.png?raw=true)
 
 ### Proposal
 Please click [here](https://github.com/alphalzh/EasyMPI/blob/master/doc/Proposal.pdf) for the project proposal.
