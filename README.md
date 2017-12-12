@@ -11,7 +11,7 @@ We implemented our profiling tool on top of Contech, an instrumentation framewor
 Enter the directory contech/backends/EasyProf and just hit make to do the work!
 
 ### How to use EasyProf
-After successfully compile the code, run ./easyProf taskGraphInputFile to run the profiler, and ./easyViz taskGraphInputFile to run the visualizer. You can play with the task graph files we included in the code directory!
+After successfully compile the code, run ./easyProf taskGraphInputFile to run the profiler, and ./easyViz taskGraphInputFile to run the visualizer. You can play with the task graph files we included in the /taskgraphs directory!
 
 You may have to wait a while for the profiler to work. It will display information on screen about the current processing progress. After it finished processing the task graph, you will be prompted to input command.
 
@@ -23,6 +23,8 @@ Available commands includes:
 * g{groupId}     [show information about specific context group. Example: g3]
 * c{contextId}   [show information about specific context. Example: c7]
 * quit           [quit EasyProf]
+
+For detailed information about the profiler, e.g. what statistics it can generate, please refer to the final report linked below.
 
 ### Demo
 The project will be demoed at the poster session on December 12th. An MPI program will be profiled by the profiler, and we will show how it can help the programmers optimize their code based on the profiling result.
