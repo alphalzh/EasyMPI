@@ -28,12 +28,18 @@ Available commands includes:
 The project will be demoed at the poster session on December 12th. An MPI program will be profiled by the profiler, and we will show how it can help the programmers optimize their code based on the profiling result.
 
 Screenshots of actual runs: 
+![Image of screen 1]
+(https://github.com/alphalzh/EasyMPI/blob/master/doc/s1.png)
+![Image of screen 2]
+(https://github.com/alphalzh/EasyMPI/blob/master/doc/s2.png)
+![Image of taskgraph]
+(https://github.com/alphalzh/EasyMPI/blob/master/doc/compressGraph.png)
 
 ### Proposal
-Please click [here](https://github.com/alphalzh/EasyMPI/blob/master/Proposal.pdf) for the project proposal.
+Please click [here](https://github.com/alphalzh/EasyMPI/blob/master/doc/Proposal.pdf) for the project proposal.
 
 ### Checkpoint Report
-Please click [here](https://github.com/alphalzh/EasyMPI/blob/master/Project_Checkpoint_zihengl_xingyuj1.pdf) for the project checkpoint report.
+Please click [here](https://github.com/alphalzh/EasyMPI/blob/master/doc/Project_Checkpoint_zihengl_xingyuj1.pdf) for the project checkpoint report.
 
 ### Final Report
-Please click [here] for the project's final report.
+Please click [here](https://github.com/alphalzh/EasyMPI/blob/master/doc/EasyProf_final_report.pdf) for the project's final report.
