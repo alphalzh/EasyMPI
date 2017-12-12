@@ -28,7 +28,7 @@ Available commands includes:
 The project will be demoed at the poster session on December 12th. An MPI program will be profiled by the profiler, and we will show how it can help the programmers optimize their code based on the profiling result.
 
 Screenshots of actual runs: 
-![Image of screen 1](https://github.com/alphalzh/EasyMPI/blob/master/doc/s1.png)
+![Image of screen 1](https://github.com/alphalzh/EasyMPI/blob/master/doc/s1.png?raw=true)
 ![Image of screen 2](https://github.com/alphalzh/EasyMPI/blob/master/doc/s2.png)
 Generated task graph:
 ![Image of taskgraph](https://github.com/alphalzh/EasyMPI/blob/master/doc/compressGraph.png)
