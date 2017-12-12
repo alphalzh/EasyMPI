@@ -1,5 +1,5 @@
 ## EasyProf: An easy-to-use parallel application profiling toolkit based on Contech
-We implemented EasyProf (formerly named EasyMPI), a light-weight profiler tool for parallel applications built on top of frameworks like pthread, cilk and OpenMP. This project is be based on [Contech](https://github.com/bprail/contech), an instrumentation framework for parallel computing developed by B. P. Railing et al. 
+We implemented EasyProf (formerly named EasyMPI), a light-weight profiler tool for parallel applications built on top of frameworks like pthread, cilk and OpenMP. This project is based on [Contech](https://github.com/bprail/contech), an instrumentation framework for parallel computing developed by B. P. Railing et al. 
 
 ### Introduction
 Performance is always one of the most important aspects to consider in terms of parallel application design. However, it's often non-trivial to measure a parallel application's performance and figure out the bottlenecks. Therefore, we decide to build a profiling tool that can help programmers learn more about their parallel applications' performance.
